@@ -1,19 +1,55 @@
-# Database systems (Sistemi baza podataka)
+# Datbase Systems (Sistemi baza podataka)
+**Grade: 300/300**
 
-## Built for univeristy project, graded 300 out of 300.
+This repository contains a three-stage project developed for a university course on Database Systems. The project demonstrates key database concepts, including EER modeling, trigger implementation, ORM configuration, and API development.
+## First Stage
+In the first stage, we designed an **Enhanced Entity-Relationship (EER)** diagram, defining entities, relationships, and attributes. We applied advanced EER concepts such as **unions**, **categories**, and **complex hierarchical structures**. After completing the EER diagram, we created the corresponding SQL tables and populated them with sample data to simulate real-world scenarios and validate the design.
+## Second Stage
+The second stage focused on database automation and the establishment of **Object-Relational Mapping (ORM)**. We implemented auto-indexing **triggers** that automatically create indexes during operations like `INSERT`, significantly improving query performance without manual intervention. Additionally, we configured Fluent NHibernate to map database tables directly to our domain models, reducing the need for extensive SQL queries. To demonstrate the functionality of our mappings, we developed a C# WinForms application that supports CRUD operations and dynamically displays data from the database.
+## Third stage
+In the final stage, we transitioned from a desktop-based solution to a web-based environment by developing a **RESTful Web API**. This API replicated the functionalities previously handled by the WinForms application, enabling seamless web-based interactions.
+## Tech Stack
 
-Project consisted of three stages.
+⚙️ **Framework:** .NET 8 (C#)
 
-### First stage
-In the first stage of the project we were required to design EER diagram, which involved defining entities, releationships, attributes, ... We had to make use of advanced EER concepts such as unions, categories and other features that extend the basic ER diagram. After completing the EER diagram, we used SQL to create the corresponding tables in database and populate them with data.
+🛢 **Database:** Oracle SQL
 
-### Second stage
-In the second stage of the project, we were tasked with implementing databse triggers specifically for auto-indexing. These triggers would automatically create indexes in the database whenever operation like insert occured.
-In addition to creating triggers we were tasked with creating Fluent NHibernate mappings. This involved configuring ORM, where we linked our database tables with our domain models to reduce the need for manual SQL queries. To show that all of our mappings worked we had to create WinForms app to showcase all of the funcionalities of our application such as CRUD operations and displaying data from the database.
+🔗 **ORM:** Fluent NHibernate
 
-### Third stage
-The main focuse of the third stage was on refining and extending the work from the second stage. Instead of the WinForms app, we had to develop Web API. The API had the same functionalities that were previously handled by WinForms app, but now in web-based format. We also used Swagger to demonstrate the API's endpoints, allowing us to showcase all of the functionalities. 
+🖥️ **UI Framework:** WinForms
+
+🌐 **API Documentation:** Swagger
+
+
+## Installation
+
+### Prerequisites:
+- **.NET**: [Download .NET](https://dotnet.microsoft.com/en-us/download)
+- **Oracle SQL Developer**: [Download SQL Developer](https://www.oracle.com/database/sqldeveloper/)
+
+
+### Steps to run the projects:
+
+1. Clone the repository: 
+```bash
+git clone https://github.com/aleksa1205/database-systems
+cd database-systems
+```
+2. Run the WinForms Application (Second stage):
+```bash
+cd FashionWeek-DomaciII
+dotnet restore
+dotnet run
+```
+
+3. Run the Web API (Third stage):
+```bash
+cd FashionWeek-DomaciIII
+dotnet restore
+dotnet run
+```
 ## Authors
+👤  [Aleksa Perić](https://github.com/aleksa1205)
 
-- [Jovan Cvetković](https://github.com/CJovan02) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jovan-cvetkovic-6750bb255/)
-- [Aleksa Perić](https://github.com/aleksa1205) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aleksaperic02/)
+👤  [Jovan Cvetković](https://github.com/CJovan02)
+
